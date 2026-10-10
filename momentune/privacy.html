@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Momentune Privacy Policy</title>
+  <meta name="description" content="How Momentune handles your photos, location, music accounts and purchases.">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="apple-touch-icon.png">
+  <style>:root { --app-accent: #e8703c; --app-accent-2: #3346c4; } @media (prefers-color-scheme: dark) { :root { --app-accent: #f68c5c; --app-accent-2: #6d7cf0; } }</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="apple-touch-icon.png" alt="" width="30" height="30">Momentune</a>
+      <nav class="nav" aria-label="Main">
+        <a href="./">Overview</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="../">All apps</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective date: October 10, 2026</p>
+
+    <p>This policy explains what information the Momentune iPhone app (“Momentune”, “the app”) processes, why, and the choices you have. Momentune is made by İhsan Gök (“we”, “us”). If you have questions, contact us at <a href="mailto:miselylab@gmail.com">miselylab@gmail.com</a>.</p>
+
+    <p><strong>In short:</strong> photos you save stay on your device. When you ask for recommendations, a resized copy of the photo, with its location data removed, is sent to an AI service for analysis. It is not stored in our cloud. We do not sell your data, show ads, or track you across other companies’ apps or websites.</p>
+
+    <nav class="toc" aria-label="Contents">
+      <ol>
+        <li><a href="#collect">Information we process</a></li>
+        <li><a href="#use">How we use it</a></li>
+        <li><a href="#providers">Service providers</a></li>
+        <li><a href="#retention">How long we keep it</a></li>
+        <li><a href="#choices">Your choices and rights</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#transfers">International transfers</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="collect">1. Information we process</h2>
+
+    <h3>Photos</h3>
+    <p>You choose which photo to analyze, either by taking one with the camera or by picking one from your library. Momentune only sees the photos you choose. It cannot browse the rest of your library.</p>
+    <ul>
+      <li><strong>For analysis:</strong> before sending, the app fixes the orientation, resizes the photo to at most 1280 pixels, re-encodes it and removes all embedded metadata, including EXIF and GPS location. The copy is sent to the AI provider described in <a href="#providers">Section 3</a>, processed in memory, and not saved by our servers, database or cloud storage.</li>
+      <li><strong>Memories:</strong> if you save a moment, the photo is stored only on that device, with iOS file protection. It is not uploaded to iCloud, CloudKit or our servers.</li>
+      <li><strong>Consent:</strong> before your first analysis, the app tells you which AI provider will process your photo and asks for your permission.</li>
+    </ul>
+
+    <h3>Approximate location</h3>
+    <p>If you allow location access, the app finds your approximate position (to about 1 km) on your device. It uses that position to get local weather from Apple WeatherKit and to look up your city and country. Only your <strong>city and country code</strong> are sent with an analysis request. Exact coordinates are not sent to us or written to logs. Location is optional, and the app works without it.</p>
+
+    <h3>Account identifier</h3>
+    <p>When you first open the app, it creates an anonymous account with Firebase Authentication, identified by a random user ID. You can choose to link it to Sign in with Apple to keep your data across devices. In that case, Apple shares an identifier with us, plus your name and email only if you choose to share them.</p>
+
+    <h3>Preferences and app content</h3>
+    <p>To sync across your devices and personalize recommendations, we store the following with your user ID: language and music preferences, analysis results (for example mood, genres and tempo), the songs and playlists suggested to you, your favorites, and feedback such as skipped or opened songs. Your photos are never part of this data.</p>
+
+    <h3>Music service connections</h3>
+    <ul>
+      <li><strong>Apple Music:</strong> with your permission, the app uses Apple’s MusicKit to search the catalog, play songs and create private playlists in your library.</li>
+      <li><strong>Spotify:</strong> if you connect Spotify, the app gets an access token through Spotify’s secure sign-in. The token is stored only in your device’s Keychain and is not sent to our servers. It is used to check songs in the catalog and to create private playlists in your account.</li>
+    </ul>
+
+    <h3>Purchases</h3>
+    <p>Apple handles all payments. We never see your payment card details. To manage subscriptions and restore purchases, we use RevenueCat, which receives your purchase history, subscription status and your Momentune user ID. We do not send photos, location, music account tokens or analysis requests to RevenueCat.</p>
+
+    <h3>Diagnostics</h3>
+    <p>We use Firebase Crashlytics and Firebase Performance Monitoring to find crashes and slow parts of the app. They collect technical information such as the device model, iOS version, app version, crash stack traces and timings. They never include photos, prompts, coordinates, tokens or music account content. We use Firebase App Check to verify that requests come from the real app, and Firebase Remote Config to turn features on or off.</p>
+
+    <h2 id="use">2. How we use information</h2>
+    <ul>
+      <li>To analyze a photo and recommend songs that fit it.</li>
+      <li>To play songs and create playlists in the music service you connect.</li>
+      <li>To sync your memories, favorites and preferences between your devices.</li>
+      <li>To personalize future recommendations based on your feedback.</li>
+      <li>To provide subscriptions and restore purchases.</li>
+      <li>To keep the service secure, prevent abuse, and fix bugs.</li>
+    </ul>
+    <p>We do not use your information for advertising. We do not sell or rent it, and we do not share it with data brokers.</p>
+
+    <h2 id="providers">3. Service providers</h2>
+    <p>We use the following providers to run Momentune. Each one processes data only to provide its service to us, under its own terms.</p>
+    <table>
+      <thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead>
+      <tbody>
+        <tr><td>Google Firebase</td><td>Anonymous accounts, database, cloud functions, App Check, Remote Config, Crashlytics, Performance Monitoring</td><td>User ID, preferences, analysis and track information, technical diagnostics</td></tr>
+        <tr><td>Google Gemini (via Firebase AI Logic)</td><td>Default photo analysis provider</td><td>Resized photo without metadata, city and country, language and music preferences</td></tr>
+        <tr><td>OpenAI</td><td>Alternative photo analysis provider, used only when the in-app consent screen names it</td><td>Resized photo without metadata, city and country, language and music preferences</td></tr>
+        <tr><td>Apple</td><td>App Store purchases, Sign in with Apple, MusicKit, WeatherKit</td><td>Purchase details, Apple ID identifier, music requests, approximate location for weather</td></tr>
+        <tr><td>Spotify</td><td>Song search, playlist creation (if you connect it)</td><td>Your Spotify account, the songs you save</td></tr>
+        <tr><td>RevenueCat</td><td>Subscription management</td><td>Momentune user ID, purchase history, subscription status</td></tr>
+      </tbody>
+    </table>
+    <p>The AI providers’ own processing and retention follow their applicable terms. We do not claim that they keep no copy at all.</p>
+
+    <h2 id="retention">4. How long we keep information</h2>
+    <ul>
+      <li><strong>Photos sent for analysis:</strong> processed in memory and not stored by our servers.</li>
+      <li><strong>Analysis request records:</strong> kept for 24 hours to prevent duplicate requests, then deleted.</li>
+      <li><strong>Song feedback:</strong> deleted after 90 days.</li>
+      <li><strong>Preferences, memories metadata, favorites and playlists:</strong> kept until you delete them or your account.</li>
+      <li><strong>Photos saved as memories:</strong> on your device until you delete them or the app.</li>
+      <li><strong>Diagnostics:</strong> kept according to Firebase’s standard retention periods.</li>
+    </ul>
+
+    <h2 id="choices">5. Your choices and rights</h2>
+    <ul>
+      <li><strong>Delete your account:</strong> go to Settings › Delete account in the app. This removes your synced data, your Firebase account, your RevenueCat customer record and the photos stored on that device. Deleting your account does <em>not</em> cancel an App Store subscription. To cancel, go to iPhone Settings › your name › Subscriptions.</li>
+      <li><strong>Export your data:</strong> the app can export your moment information and preferences from Settings.</li>
+      <li><strong>Permissions:</strong> you can allow or deny camera, photos, location and Apple Music access at any time in iPhone Settings › Momentune.</li>
+      <li><strong>Music services:</strong> you can disconnect Apple Music or Spotify from the app’s Settings at any time.</li>
+    </ul>
+    <p>Depending on where you live, for example under the EU/UK GDPR, Turkey’s KVKK or California’s CCPA, you may have the right to access, correct, delete or port your personal data, to object to or restrict certain processing, and to complain to your local data protection authority. To use these rights, email <a href="mailto:miselylab@gmail.com">miselylab@gmail.com</a> and include the user ID shown in the app’s Settings. We will reply within 30 days.</p>
+
+    <h2 id="security">6. Security</h2>
+    <p>Data is encrypted in transit. Access to our database is limited to your own account by security rules. Requests are checked with App Check. Spotify tokens are stored in a Keychain item that stays on the device. Saved photos use iOS data protection. No system is perfectly secure, but we work to protect your information.</p>
+
+    <h2 id="children">7. Children</h2>
+    <p>Momentune is not directed at children under 13, and we do not knowingly collect their personal information. If you believe a child has given us personal information, contact us and we will delete it.</p>
+
+    <h2 id="transfers">8. International transfers</h2>
+    <p>Our service providers may process data in countries other than yours, including the United States. Where required, these transfers rely on appropriate safeguards such as Standard Contractual Clauses.</p>
+
+    <h2 id="changes">9. Changes to this policy</h2>
+    <p>If we update this policy, we will post the new version on this page and change the effective date. If the changes are significant, we will also tell you in the app.</p>
+
+    <h2 id="contact">10. Contact</h2>
+    <p>İhsan Gök<br><a href="mailto:miselylab@gmail.com">miselylab@gmail.com</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 İhsan Gök</span>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+        <a href="../">All apps</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
