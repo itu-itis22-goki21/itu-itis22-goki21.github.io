@@ -53,7 +53,8 @@
     <ul>
       <li><strong>For analysis:</strong> before sending, the app fixes the orientation, resizes the photo to at most 1280 pixels, re-encodes it and removes all embedded metadata, including EXIF and GPS location. The copy is sent to the AI provider described in <a href="#providers">Section 3</a>, processed in memory, and not saved by our servers, database or cloud storage.</li>
       <li><strong>Memories:</strong> if you save a moment, the photo is stored only on that device, with iOS file protection. It is not uploaded to iCloud, CloudKit or our servers.</li>
-      <li><strong>Consent:</strong> before your first analysis, the app tells you which AI provider will process your photo and asks for your permission.</li>
+      <li><strong>Consent:</strong> before your first analysis, the app tells you which AI provider will process your photo and asks for your permission. You can withdraw this permission in the app’s Settings at any time. The app will then ask again before the next analysis. Withdrawing does not undo an analysis that was already sent.</li>
+      <li><strong>Visible content:</strong> removing metadata does not hide what the photo shows, such as faces or places. Only analyze photos you are comfortable sharing, and respect other people’s privacy.</li>
     </ul>
 
     <h3>Approximate location</h3>
@@ -108,6 +109,7 @@
       <li><strong>Photos sent for analysis:</strong> processed in memory and not stored by our servers.</li>
       <li><strong>Analysis request records:</strong> kept for 24 hours to prevent duplicate requests, then deleted.</li>
       <li><strong>Song feedback:</strong> deleted after 90 days.</li>
+      <li><strong>Deleted memories:</strong> a small deletion marker is kept for about 30 days so the deletion reaches your other devices.</li>
       <li><strong>Preferences, memories metadata, favorites and playlists:</strong> kept until you delete them or your account.</li>
       <li><strong>Photos saved as memories:</strong> on your device until you delete them or the app.</li>
       <li><strong>Diagnostics:</strong> kept according to Firebase’s standard retention periods.</li>
@@ -117,6 +119,7 @@
     <ul>
       <li><strong>Delete your account:</strong> go to Settings › Delete account in the app. This removes your synced data, your Firebase account, your RevenueCat customer record and the photos stored on that device. Deleting your account does <em>not</em> cancel an App Store subscription. To cancel, go to iPhone Settings › your name › Subscriptions.</li>
       <li><strong>Export your data:</strong> the app can export your moment information and preferences from Settings.</li>
+      <li><strong>Cloud analysis:</strong> you can withdraw your permission for cloud photo analysis in the app’s Settings.</li>
       <li><strong>Permissions:</strong> you can allow or deny camera, photos, location and Apple Music access at any time in iPhone Settings › Momentune.</li>
       <li><strong>Music services:</strong> you can disconnect Apple Music or Spotify from the app’s Settings at any time.</li>
     </ul>
